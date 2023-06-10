@@ -1,0 +1,57 @@
+html,
+body {
+    height: 100%;
+    overflow: auto;
+    /*margin: 0px;
+    padding: 0px;*/
+}
+
+body {    
+    background-color: var(--color-pink);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.parisienne-regular {
+    font-family: 'Parisienne-Regular';
+}
+
+.nav-container {
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+}
+
+.nav-container {
+    height: 70px;
+}
+
+[class^='radial-text-'] {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.radial-text-gold {
+    background-image: var(--color-radial-gold);
+}
+
+.radial-text-blue {
+    background-image: var(--color-radial-blue);
+}
+
+.fa-bars {
+    font-size: 1.5rem;
+}
+
+.blur-border-box {
+    box-shadow: inset 5px 0px 5px 0px var(--color-pink), 
+        inset -5px 0px 5px 0px var(--color-pink);      
+}
+
+.img-center-text {
+    width: 100%;
+}
+
