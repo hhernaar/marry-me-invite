@@ -1,2 +1,1 @@
-export * from './CountdownPage';
-export * from './GuestPage';
+export * from './LandingPage';

@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Parisienne-Regular';
+    src: local('Parisienne-Regular'),
+        url('../fonts/Parisienne/Parisienne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Merriweather-Regular';
+    src: local('Merriweather-Regular'),
+        url('../fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');
+}
+
+.parisienne-regular {
+    font-family: 'Parisienne-Regular';
+}
+
+.merriweather-regular {
+    font-family: 'Merriweather-Regular';
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.radial-text-gold {
+    background-image: var(--color-radial-gold);
+}
+
+.radial-text-blue {
+    background-image: var(--color-radial-blue);
+}
+
+
+[class*='radial-text-'] {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1.parisienne-regular,
+h1.merriweather-regular {
+    font-size: 2.5rem;
+}

@@ -1,13 +1,16 @@
+import { Navigate, Route, Routes } from 'react-router-dom';
 import { Navbar } from '../components';
-import { CountdownPage, GuestPage } from '../pages'
+import { LandingPage } from '../pages';
 
 export const AppRouter = () => {
   return (
     <>
       <Navbar />
       <section id='main-container' className='container'>
-        <CountdownPage />
-        <GuestPage />
+        <Routes>
+          <Route path='/' element={ <LandingPage /> } />
+          <Route path='/*' element={ <Navigate to='/' /> } />
+        </Routes>
       </section>
     </>
   );

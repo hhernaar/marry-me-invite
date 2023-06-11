@@ -1,3 +1,3 @@
 export * from './Navbar';
-export * from './TextCenter';
-export * from './Img';
+export * from './Welcome';
+export * from './Timer';

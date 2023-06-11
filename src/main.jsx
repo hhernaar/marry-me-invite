@@ -5,6 +5,7 @@ import { InviteApp } from './InviteApp.jsx';
 
 import './index.css';
 import './assets/css/style.css';
+import './assets/css/fonts.css';
 import './assets/css/desktop.css';
 import './assets/css/mobile.css';
 

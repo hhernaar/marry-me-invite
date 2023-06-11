@@ -2,8 +2,8 @@ html,
 body {
     height: 100%;
     overflow: auto;
-    /*margin: 0px;
-    padding: 0px;*/
+    margin: 0px;
+    padding: 0px;
 }
 
 body {    
@@ -15,31 +15,9 @@ img {
     height: auto;
 }
 
-.parisienne-regular {
-    font-family: 'Parisienne-Regular';
-}
-
 .nav-container {
     margin-right: 1.5rem;
     margin-top: 1rem;
-}
-
-.nav-container {
-    height: 70px;
-}
-
-[class^='radial-text-'] {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.radial-text-gold {
-    background-image: var(--color-radial-gold);
-}
-
-.radial-text-blue {
-    background-image: var(--color-radial-blue);
 }
 
 .fa-bars {
