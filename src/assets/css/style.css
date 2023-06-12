@@ -25,11 +25,33 @@ img {
 }
 
 .blur-border-box {
-    box-shadow: inset 5px 0px 5px 0px var(--color-pink), 
-        inset -5px 0px 5px 0px var(--color-pink);      
+    box-shadow: inset 15px 0px 15px 0px var(--color-pink), 
+        inset -15px 0px 15px 0px var(--color-pink);      
 }
 
-.img-center-text {
-    width: 100%;
+.top-40 {
+    top: 40%;
 }
 
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    /*border-bottom: 1px solid rgb(247, 211, 112);*/
+    border-bottom: 1px solid;
+  }
+  
+  .separator:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: .25em;
+  }

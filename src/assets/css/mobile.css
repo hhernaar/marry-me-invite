@@ -1,22 +1,24 @@
-#welcome {
+.welcome {
     background-image: var(--countdowm-background-img-url);
+    filter: brightness(.7);
+}
+
+.tickets {
+    background-image: var(--guest-background-img-url);
+}
+
+.where {
+    background-image: var(--guest-background-img-url);
+}
+
+.welcome,
+.tickets,
+.where {
     background-repeat : no-repeat;
     background-size: contain;
     background-position: top center;
     max-width: 100%;
-    height: 95vh;
+    height: auto;
     align-items: center;
-    filter: brightness(0.7);
     font-weight: bold;
-}
-
-/*
-#welcome::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: rgba(0,0,0,0.5);
-  }*/
+} 

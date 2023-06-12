@@ -8,7 +8,7 @@ export const AppRouter = () => {
       <Navbar />
       <section id='main-container' className='container'>
         <Routes>
-          <Route path='/' element={ <LandingPage /> } />
+          <Route path='/marry-me-invite/' element={ <LandingPage /> } />
           <Route path='/*' element={ <Navigate to='/' /> } />
         </Routes>
       </section>

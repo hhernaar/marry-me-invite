@@ -10,7 +10,7 @@ export const Timer = () => {
             <>
             <div className='row'>
                 <div className='col-12 d-flex justify-content-center'>
-                    {days} d : {hours} h: {minutes} m: {seconds} s
+                    {days} D : {hours} H: {minutes} M: {seconds} s
                 </div>
             </div>
             </>);

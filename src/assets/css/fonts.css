@@ -18,7 +18,7 @@
     font-family: 'Merriweather-Regular';
 }
 
-.text-white {
+.simple-text-white {
     color: var(--color-white);
 }
 
@@ -37,7 +37,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-h1.parisienne-regular,
+/*h1.parisienne-regular,
 h1.merriweather-regular {
-    font-size: 2.5rem;
-}
+    font-size: 2rem;
+}*/
