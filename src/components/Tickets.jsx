@@ -3,11 +3,11 @@ import React from 'react'
 export const Tickets = () => {
     return (
         <>
-            <section id='tickets'
+            <section
                 className='container d-flex justify-content-center position-relative '
             >
 
-                <div className="container tickets">
+                <div className="tickets">
                     <img style={{ content: 'var(--guest-background-img-url)', opacity: '0' }} />
                 </div>
 

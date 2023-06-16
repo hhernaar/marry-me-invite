@@ -3,10 +3,10 @@ import { Timer } from "./Timer"
 export const Welcome = () => {
     return (
         <>
-            <section id='welcome'
+            <section
                 className='container d-flex justify-content-center position-relative'
             >
-                <div className="container welcome">
+                <div className="welcome">
                     <img style={{content: 'var(--countdowm-background-img-url)', opacity: '0'}} />
                 </div>
 

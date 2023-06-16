@@ -1,11 +1,11 @@
 export const Where = () => {
     return (
         <>
-            <section id='where'
+            <section
                 className='container d-flex justify-content-center position-relative '
             >
 
-                <div className="container where">
+                <div className="where">
                     <img style={{ content: 'var(--guest-background-img-url)', opacity: '0' }} />
                 </div>
 
