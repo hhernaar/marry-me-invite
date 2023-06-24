@@ -1,11 +1,13 @@
-import { Tickets, Welcome, Where } from '../components'
+import { Galery, SaveTheDate, Welcome, Where } from '../components'
+
 
 export const LandingPage = () => {
   return (
     <>
       <Welcome />
-      <Tickets />
+      <SaveTheDate />
       <Where />
+      <Galery />
     </>
   )
 }

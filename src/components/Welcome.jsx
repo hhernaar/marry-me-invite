@@ -1,36 +1,19 @@
-import { Timer } from "./Timer"
-
 export const Welcome = () => {
     return (
         <>
-            <section
-                className='container d-flex justify-content-center position-relative'
-            >
-                <div className="welcome">
-                    <img style={{content: 'var(--countdowm-background-img-url)', opacity: '0'}} />
+            <section className='position-relative'>
+                <img style={{ content: 'var(--main-image-url)' }} />
+                <div className='background-white position-absolute welcome-timer container-circle'>
+                    <span>
+                        <h3 className='parisienne-regular'>Nuestra boda</h3>
+                        <div className='merriweather-regular'>
+                            <h4>Adriana</h4>
+                            <hr className='text-separator' data-text='&'/>
+                            <h4>Aaron</h4>
+                            <h5>14 Sep, 2024</h5>
+                        </div>
+                    </span>
                 </div>
-
-                <div className='row d-flex justify-content-center position-absolute top-50 simple-text-white'>
-                    <div className='col-12 d-flex justify-content-center'>
-                        <span>
-                            <h1 className='parisienne-regular'>
-                                Adriana & Aaron
-                            </h1>
-                        </span>
-                    </div>
-                    <div className='separator col-12 mb-4'>SAVE THE DATE</div>
-                    <div className='col-12 d-flex justify-content-center'>
-                        <span>
-                            <h4 className='merriweather-regular'>
-                                September 14th 2024
-                            </h4>
-                        </span>
-                    </div>
-                    <div className='col-12 d-flex justify-content-center merriweather-regular'>
-                        <Timer />
-                    </div>
-                </div>
-
             </section>
         </>
     )

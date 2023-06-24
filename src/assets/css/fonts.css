@@ -10,12 +10,22 @@
         url('../fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Pacifico-Regular';
+    src: local('Pacifico-Regular'),
+        url('../fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+}
+
 .parisienne-regular {
     font-family: 'Parisienne-Regular';
 }
 
 .merriweather-regular {
     font-family: 'Merriweather-Regular';
+}
+
+.pacifico-regular {
+    font-family: 'Pacifico-Regular';
 }
 
 .simple-text-white {
@@ -36,8 +46,3 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-/*h1.parisienne-regular,
-h1.merriweather-regular {
-    font-size: 2rem;
-}*/
