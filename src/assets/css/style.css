@@ -7,13 +7,9 @@ body {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
-
-/*div {
-    border: solid 1px red;
-}*/
 
 .background-white {
     background-color: var(--color-white);

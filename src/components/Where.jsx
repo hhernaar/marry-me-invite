@@ -4,15 +4,31 @@ export const Where = () => {
 
     return (
         <>
-            <hr className='text-separator' data-text='Donde' />
             <section className='merriweather-regular mt-3'>
 
-                <img style={{ content: 'var(--galery-image-place)' }} />
-                <div className='background-white d-flex justify-content-center' style={{ top: '0%', left:'10%', borderRadius:'15%'}}>
-                    <span>
-                        Jardin La Estancia
-                    </span>
+                <div className="row parisienne-regular text-center">
+                    <div className="col-12">
+                        <h1>Cuando y donde</h1>
+                    </div>
+                    <div className="col-12">
+                        <h3>Esperamos con mucha emocion verlos a todos pronto</h3>
+                    </div>
                 </div>
+
+                <div className="row d-flex justify-content-center">
+                    <div className="col-6 text-center">
+                        La ceremoia
+                    </div>
+                    <div className="col-6 text-center">
+                        La recepcion
+                    </div>
+                    <div className="col-6 text-center">
+                        La fiesta
+                    </div>
+                </div>
+
+                
+
 
             </section>
         </>

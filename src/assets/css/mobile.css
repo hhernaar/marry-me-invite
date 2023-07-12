@@ -1,16 +1,17 @@
-.welcome-timer {
-    bottom: 3%;
-    left: calc(50% - 100px);
+.welcome-date {
+    bottom: 3vh;
 }
 
 .container-circle {
     border-radius: 50%;
     text-align: center;
-    width: 200px;
-    height: 200px;
+    width: 67%;
+    height: 50%;
+    max-width: 300px;
+    max-height: 300px;
 }
 
-.container-circle>span {
+.container-circle > span {
     margin: 10px;
 }
 
@@ -41,16 +42,3 @@
     position: relative;
 }
 
-.background-img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    max-width: 100%;
-    align-items: center;
-    font-weight: bold;
-}
-/*
-.box-top-title {
-    padding: 3px 6px;
-
-}*/
