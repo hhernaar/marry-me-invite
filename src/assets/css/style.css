@@ -19,6 +19,6 @@ img {
     background-color: var(--color-cream);
 }
 
-.background-pink {
-    background-color: var(--color-pink);
+.bold {
+    font-weight: bold;
 }

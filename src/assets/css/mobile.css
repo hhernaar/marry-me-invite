@@ -42,3 +42,19 @@
     position: relative;
 }
 
+
+.pink-boder-container {
+    background-color: var(--color-light-pink);
+    border: solid 1px var(--color-pink);
+    color: var(--color-pink);
+    font-weight: bold;
+}
+
+.ritual-container {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+}
+
+.map iframe{
+    flex-grow: 1;
+}

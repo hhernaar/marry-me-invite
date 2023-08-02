@@ -5,11 +5,12 @@ export const LandingPage = () => {
   return (
     <>
       <Welcome />
+      <Where />
       {/*
       <SaveTheDate />
-      <Where />
-      <Galery />
+      
     */}
+    <Galery />
     </>
   )
 }

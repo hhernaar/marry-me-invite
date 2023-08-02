@@ -1,34 +1,78 @@
+import { Map } from "./Map"
+
 export const Where = () => {
 
-    const googleMapsLink = 'https://www.google.com.mx/maps/place/Jardin+La+Estancia/@18.9455355,-99.2384438,17z/data=!3m1!4b1!4m6!3m5!1s0x85cddf9811d41b3b:0x75413dd7cdaa4c7b!8m2!3d18.9455304!4d-99.2358689!16s%2Fg%2F1tdg83y8?entry=ttu';
 
     return (
         <>
-            <section className='merriweather-regular mt-3'>
+            <section className='merriweather-regular'>
 
-                <div className="row parisienne-regular text-center">
-                    <div className="col-12">
-                        <h1>Cuando y donde</h1>
+                <div className='text-center parisienne-regular pink-boder-container'>
+                    <div className='col-12'>
+                        <h1 className='bold'>Cuando</h1>
                     </div>
-                    <div className="col-12">
-                        <h3>Esperamos con mucha emocion verlos a todos pronto</h3>
+                    <div className='col-12'>
+                        <h2>Esperamos con mucha emocion verlos a todos pronto</h2>
                     </div>
                 </div>
 
-                <div className="row d-flex justify-content-center">
-                    <div className="col-6 text-center">
-                        La ceremoia
+                <div className='d-flex justify-content-around flex-wrap'>
+
+                    <div className='text-center col-12 col-md-4 ritual-container'>
+
+                        <div className='row me-0'>
+                            <div className='col-12'>
+                                <span className='diamon-ring'></span>
+                            </div>
+                            <div className='col-12 parisienne-regular'>
+                                <h1>La ceremonia</h1>
+                            </div>
+                        </div>
+
+                        <div className='row me-0'>
+                            <div className='col-12'>
+                                Sábado 14 de Septiembre 2024 - 14:30
+                                Jardín La Estancia, Cuernavaca Morelos
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-6 text-center">
-                        La recepcion
+
+                    <div className='text-center col-6 col-md-4 pink-boder-container'>
+                        <div className='row me-0'>
+                            <div className='col-12'>
+                                <span className='fa-solid fa-martini-glass-citrus'></span>
+                            </div>
+                            <div className='col-12 parisienne-regular'>
+                                <h1>La recepción</h1>
+                            </div>
+                        </div>
+
+                        <div className='row me-0'>
+                            <div className='col-12'>
+                                Coctel de bienvenida y asignacion de mesas 16:00 - 17:00
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-6 text-center">
-                        La fiesta
+
+                    <div className='text-center col-6 col-md-4 pink-boder-container'>
+                        <div className='row me-0'>
+                            <div className='col-12'>
+                                <span className='fa-solid fa-cake-candles'></span>
+                            </div>
+                            <div className='col-12 parisienne-regular'>
+                                <h1>La fiesta</h1>
+                            </div>
+                        </div>
+
+                        <div className='row me-0'>
+                            <div className='col-12'>
+                               La fiesta iniciara a las 17:00
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                
-
+                <Map />
 
             </section>
         </>

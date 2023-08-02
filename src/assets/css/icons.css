@@ -1,0 +1,7 @@
+.diamon-ring  {
+    background:url('../icons/diamond-ring.png') no-repeat 50% 50%;
+    background-size: 28px 28px;
+    display: inline-block;
+    height: 28px;
+    width: 50px;
+}

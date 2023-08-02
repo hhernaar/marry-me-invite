@@ -6,3 +6,4 @@ export * from './Where';
 export * from './Galery';
 export * from './CarouselItem';
 export * from './Carousel';
+export * from './Map';
