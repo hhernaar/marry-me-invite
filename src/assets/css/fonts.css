@@ -1,48 +1,76 @@
 @font-face {
-    font-family: 'Parisienne-Regular';
-    src: local('Parisienne-Regular'),
-        url('../fonts/Parisienne/Parisienne-Regular.ttf') format('truetype');
+    font-family: 'Montserrat-Regular';
+    src: local('Montserrat-Regular'),
+        url('../fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Merriweather-Regular';
-    src: local('Merriweather-Regular'),
-        url('../fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');
+    font-family: 'Courgette-Regular';
+    src: local('Courgette-Regular'),
+        url('../fonts/Courgette/Courgette-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Pacifico-Regular';
-    src: local('Pacifico-Regular'),
-        url('../fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+    font-family: 'Cookie-Regular';
+    src: local('Cookie-Regular'),
+        url('../fonts/Cookie/Cookie-Regular.ttf') format('truetype');
 }
 
-.parisienne-regular {
-    font-family: 'Parisienne-Regular';
+@font-face {
+    font-family: 'Satisfy-Regular';
+    src: local('Satisfy-Regular'),
+        url('../fonts/Satisfy/Satisfy-Regular.ttf') format('truetype');
 }
 
-.merriweather-regular {
-    font-family: 'Merriweather-Regular';
+@font-face {
+    font-family: 'Cinzel';
+    src: local('Cinzel'),
+        url('../fonts/Cinzel/Cinzel-VariableFont_wght.ttf') format('truetype');
 }
 
-.pacifico-regular {
-    font-family: 'Pacifico-Regular';
+@font-face {
+    font-family: 'Cormorant-Regular';
+    src: local('Cormorant-Regular'),
+        url('../fonts/Cormorant/static/Cormorant-Regular.ttf') format('truetype');
 }
 
-.simple-text-white {
-    color: var(--color-white);
+@font-face {
+    font-family: 'LobsterTwo-Regular';
+    src: local('LobsterTwo-Regular'),
+        url('../fonts/Lobster_Two/LobsterTwo-Regular.ttf') format('truetype');
 }
 
-.radial-text-gold {
-    background-image: var(--color-radial-gold);
+@font-face {
+    font-family: 'ElMessiri';
+    src: local('ElMessiri'),
+        url('../fonts/El_Messiri/ElMessiri-VariableFont_wght.ttf') format('truetype');
 }
 
-.radial-text-blue {
-    background-image: var(--color-radial-blue);
+
+.font-italic {
+    font-family: 'Cookie-Regular';
 }
 
+.font-courgette {
+    font-family: 'Courgette-Regular';
+}
 
-[class*='radial-text-'] {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.font-satisfy-regular {
+    font-family: 'Satisfy-Regular';
+}
+
+.font-cinzel {
+    font-family: 'Cinzel';
+}
+
+.font-cormorant-regular {
+    font-family: 'Cormorant-Regular';
+}
+
+.font-lobsterTwo-regular {
+    font-family: 'LobsterTwo-Regular';
+}
+
+.font-el-messiri {
+    font-family: 'ElMessiri';
 }

@@ -1,25 +1,77 @@
-import { Timer } from "./Timer"
+import Countdown from 'react-countdown';
+
+const renderer = ({ days, hours, minutes, seconds, completed }) => {
+    if (completed) {
+        return (
+            <>
+                0D : 0H : 0M : 0s
+            </>);
+    } else {
+        return (
+            <div className='save-the-date-countdown'>
+                <div className='row'>
+                    <div className='col-3'>
+                        <div className="countdown-circle">
+                            {days}
+                        </div>
+                    </div>
+                    <div className='col-3'>
+                        <div className="countdown-circle">
+                            {hours}
+                        </div>
+                    </div>
+                    <div className='col-3'>
+                        <div className="countdown-circle">
+                            {minutes}
+                        </div>
+                    </div>
+                    <div className='col-3'>
+                        <div className="countdown-circle">
+                            {seconds}
+                        </div>
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='col-3'>
+                        <div className="cutdown-text">
+                            DÍAS
+                        </div>
+                    </div>
+                    <div className='col-3'>
+                        <div className="cutdown-text">
+                            HORAS
+                        </div>
+                    </div>
+                    <div className='col-3'>
+                        <div className="cutdown-text">
+                            MINUTES
+                        </div>
+                    </div>
+                    <div className='col-3'>
+                        <div className="cutdown-text">
+                            SECONDS
+                        </div>
+                    </div>
+                </div>
+            </div>);
+    }
+};
 
 export const SaveTheDate = () => {
-  return (
-    <section className='background-cream merriweather-regular'>
-        <div className='d-flex justify-content-center'>
-            <div className='container-circle mt-3 background-img' 
-              style={{ backgroundImage: 'var(--galery-image-save-the-date-1-url)' }}>
+    return (
+        <section id='save-the-date-section' className='pt-3 pb-3'>
+            <div className="row text-center mb-0">
+                <h1 className='font-italic mb-0'>Save the Date</h1>
             </div>
-        </div>
-        <div className="d-flex justify-content-center">
-          <Timer />
-        </div>
-        <div className='d-flex justify-content-center parisienne-regular mt-2'>
-          <h2>Save the Date!</h2>
-        </div>
-        <div className='d-flex justify-content-center text-center'>
-          <span>
-            Despues de 6 años de noviazgo, hemos decidido unirnos en matrimonio
-            y queremos que sean parte de este momento.
-          </span>
-        </div>
-    </section>
-  )
+            <div className="row text-center">
+                <span id='save-the-date-names'>ADRIANA&nbsp;&nbsp;&&nbsp;&nbsp;AARON</span>
+            </div>
+            <div className="row text-center">
+                <span className='date-time'>14.09.24</span>
+            </div>
+            <div className="mt-2 d-flex justify-content-center">
+                <Countdown date={'2024/09/14'} renderer={renderer} />
+            </div>
+        </section>
+    )
 }
