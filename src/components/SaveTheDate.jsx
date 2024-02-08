@@ -59,7 +59,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 
 export const SaveTheDate = () => {
     return (
-        <section id='save-the-date-section' className='pt-3 pb-3'>
+        <section id='save-the-date-section' className='pt-0 pb-3'>
             <div className="row text-center mb-0">
                 <h1 className='font-italic mb-0'>Save the Date</h1>
             </div>

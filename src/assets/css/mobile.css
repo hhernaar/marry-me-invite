@@ -4,21 +4,22 @@
 
 #welcome-section>div {
     width: 100%;
-    height: 40vh;
+    height: auto;
 }
 
-.img-container {
+
+/*.welcome-img-container {
     position: relative;
-}
+}*/
 
-.img-container img {
+.welcome-img-container img {
     height: 100%;
     width: 100%;
-    object-fit: fill;
-    filter: grayscale(0%);
+    /*object-fit: fill;
+    filter: grayscale(0%);*/
 }
 
-.img-container h1 {
+/*.welcome-img-container h1 {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -27,7 +28,7 @@
     text-align: center;
     font-weight: normal;
     max-width: 376px;
-}
+}*/
 
 #save-the-date-section {
     width: 100%;

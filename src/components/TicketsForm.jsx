@@ -1,6 +1,19 @@
+import { useState } from 'react';
 import ticketIcon from '../assets/imgs/ticket-icon.png';
+import { useForm } from '../hooks/useForm';
+import { TicketGrid } from './TicketGrid';
 
-export const Tickets = () => {
+export const TicketsForm = () => {
+
+    const { inputNameValue, onInputChange, onResetForm } = useForm({ inputNameValue: '' });
+    const [ searchName, setSearchName ] = useState('');
+
+    const onSearchSubmit = (event) =>{
+        event.preventDefault();
+        onResetForm();
+        setSearchName(inputNameValue);
+      }
+
     return (
         <section id='tickets-section' className='pt-3 pb-3'>
             <div className='row text-center mb-3'>
@@ -11,24 +24,30 @@ export const Tickets = () => {
             </div>
 
             <div className='row text-center mb-0'>
-                <form>
+                <form onSubmit={ onSearchSubmit }>
                     <div className='row mb-0'>
                         <div className='col-1' />
                         <div className='col-8 d-flex justify-content-start'>
-                            <label for='name' className='form-label'>Nombre completo:</label>
+                            <label htmlFor='name' className='form-label'>Nombre completo:</label>
                         </div>
                     </div>
 
                     <div className='row mt-0'>
                         <div className='col-1' />
                         <div className='col-8 pe-0'>
-                            <input id='name' className='form-control' type='text'></input>
+                            <input id='inputName' name='inputNameValue' autoComplete='off' type='text' className='form-control'
+                                value={ inputNameValue } onChange={ onInputChange }
+                            />
                         </div>
                         <div className='col-3 ps-1 d-flex flex-row justify-content-start'>
-                            <button type='button' class='btn btn-primary'>Enviar</button>
+                            <button className='btn btn-primary'>Enviar</button>
                         </div>
                     </div>
                 </form>
+                {
+                    searchName != '' &&
+                    <TicketGrid key={searchName} searchName = {searchName} />
+                }
             </div>
         </section>
     )

@@ -1,2 +1,5 @@
-@media (min-width: 768px) {
+@media (min-width: 720px) {
+    #welcome-section > div {
+        height: 75vh;
+    }
 }

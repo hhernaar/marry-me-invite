@@ -1,5 +1,5 @@
 //import { useParams } from "react-router-dom";
-import { Agenda, Attendance, Location, SaveTheDate, Tickets, Welcome } from "../components"
+import { Agenda, Location, SaveTheDate, TicketsForm, Welcome } from "../components"
 import { guest_not_found, guests } from "../util/guests";
 
 export const LandingPage = () => {
@@ -12,7 +12,7 @@ export const LandingPage = () => {
       < Welcome />
       < SaveTheDate />
       < Location />
-      < Tickets />
+      < TicketsForm />
       < Agenda />
       {/*< Attendance guest={ guest.length > 0 ? guest[0] : guest_not_found } />*/}
     </>
