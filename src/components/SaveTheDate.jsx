@@ -44,12 +44,12 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
                     </div>
                     <div className='col-3'>
                         <div className="cutdown-text">
-                            MINUTES
+                            MINUTOS
                         </div>
                     </div>
                     <div className='col-3'>
                         <div className="cutdown-text">
-                            SECONDS
+                            SEGUNDOS
                         </div>
                     </div>
                 </div>

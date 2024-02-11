@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ticketIcon from '../assets/imgs/ticket-icon.png';
+import ticketIcon from '../assets/icons/ticket-icon.png';
 import { useForm } from '../hooks/useForm';
 import { TicketGrid } from './TicketGrid';
 
@@ -24,26 +24,29 @@ export const TicketsForm = () => {
             </div>
 
             <div className='row text-center mb-0'>
-                <form onSubmit={ onSearchSubmit }>
-                    <div className='row mb-0'>
-                        <div className='col-1' />
-                        <div className='col-8 d-flex justify-content-start'>
-                            <label htmlFor='name' className='form-label'>Nombre completo:</label>
+                {
+                    searchName == '' &&
+                    <form onSubmit={ onSearchSubmit }>
+                        <div className='row mb-0'>
+                            <div className='col-1' />
+                            <div className='col-8 d-flex justify-content-start'>
+                                <label htmlFor='name' className='form-label'>Nombre completo:</label>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className='row mt-0'>
-                        <div className='col-1' />
-                        <div className='col-8 pe-0'>
-                            <input id='inputName' name='inputNameValue' autoComplete='off' type='text' className='form-control'
-                                value={ inputNameValue } onChange={ onInputChange }
-                            />
+                        <div className='row mt-0'>
+                            <div className='col-1' />
+                            <div className='col-8 pe-0'>
+                                <input id='inputName' name='inputNameValue' autoComplete='off' type='text' className='form-control'
+                                    value={ inputNameValue } onChange={ onInputChange }
+                                />
+                            </div>
+                            <div className='col-3 ps-1 d-flex flex-row justify-content-start'>
+                                <button className='btn btn-primary'>Enviar</button>
+                            </div>
                         </div>
-                        <div className='col-3 ps-1 d-flex flex-row justify-content-start'>
-                            <button className='btn btn-primary'>Enviar</button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                }
                 {
                     searchName != '' &&
                     <TicketGrid key={searchName} searchName = {searchName} />

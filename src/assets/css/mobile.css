@@ -7,28 +7,10 @@
     height: auto;
 }
 
-
-/*.welcome-img-container {
-    position: relative;
-}*/
-
 .welcome-img-container img {
     height: 100%;
     width: 100%;
-    /*object-fit: fill;
-    filter: grayscale(0%);*/
 }
-
-/*.welcome-img-container h1 {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    color: var(--color-black);
-    font-size: 2rem;
-    text-align: center;
-    font-weight: normal;
-    max-width: 376px;
-}*/
 
 #save-the-date-section {
     width: 100%;
@@ -44,7 +26,7 @@
     letter-spacing: 2.5px;
 }
 
-.countdown-circle {    
+.countdown-circle {
     border-radius: 50%;
     background-color: var(--color-brown);
     color: white;
@@ -102,7 +84,7 @@
     margin-right: 0px;
 }
 
-.icon-sm > img {
+.icon-sm>img {
     max-width: 2.5rem;
 }
 
@@ -110,4 +92,66 @@
     width: 100%;
     min-height: 21vh;
     background: var(--color-blue);
+}
+
+.ticket-grid {
+    margin-left: 5px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ticket-row {
+    width: auto;
+    min-width: 270px;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.ticket-header {
+    background-color: var(--color-dark-blue);
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ticket-header img {
+    min-width: 4rem;
+    min-height: 4rem;
+    border: solid 1px var(--color-dark-blue);
+    background-color: var(--color-white);
+    border-radius: 50%;
+    position: relative;
+}
+
+.ticket-body {
+    background-color: var(--color-white);
+
+    background-origin: border-box;
+    mask: 
+        radial-gradient(circle 15px at right, #0000 95%, #000) right,
+        radial-gradient(circle 15px at left, #0000 95%, #000) left;
+    mask-size: 50% 100%;
+    mask-repeat: no-repeat;
+
+    -webkit-mask:
+        radial-gradient(circle 15px at right, #0000 95%, #000) right,
+        radial-gradient(circle 15px at left, #0000 95%, #000) left;
+    -webkit-mask-size: 50% 100%;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.ticket-pending-div {
+    border: 1px dashed gray;
+}
+
+.form-check {
+    text-align: justify;
+}
+
+.demo {
+    display: flex;
+    justify-content: space-evenly;
 }

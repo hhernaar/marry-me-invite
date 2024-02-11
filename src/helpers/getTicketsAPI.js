@@ -15,17 +15,27 @@ export const getTicketsAPI = async(name) => {
     return [
         {
             'id': 1,
+            'gender': 'M',
             'firstName': 'Roberto Aaron',
             'lastName': 'Hernandez Hernandez',
             'family': 'Hernandez Huerta',
-            'status': 'PENDING'
+            'status': 'ACCEPTED'
         },
         {
             'id': 2,
+            'gender': 'F',
             'firstName': 'Adriana Marisol',
             'lastName': 'Huerta Garrido',
             'family': 'Hernandez Huerta',
             'status': 'PENDING'
+        },
+        {
+            'id': 3,
+            'gender': 'M',
+            'firstName': 'Otro Aaron',
+            'lastName': 'Hernandez Hernandez',
+            'family': 'Hernandez Huerta',
+            'status': 'REJECTED'
         }
     ];
 };

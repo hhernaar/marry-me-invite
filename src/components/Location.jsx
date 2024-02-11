@@ -1,4 +1,4 @@
-import churchIcon from '../assets/imgs/church-icon-1.png';
+import churchIcon from '../assets/icons/church-icon-color.png';
 
 export const Location = () => {
     return (
@@ -6,7 +6,6 @@ export const Location = () => {
             <div className="row text-center mb-0">
                 <h1 className='font-el-messiri mb-0'>¿Cómo llegar?</h1>
                 <span className='icon-sm'>
-                    {/*<i class="fa-solid fa-place-of-worship"></i>*/}
                     <img src={churchIcon} />
                 </span>
             </div>

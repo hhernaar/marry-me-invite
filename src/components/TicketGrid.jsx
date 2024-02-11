@@ -7,13 +7,12 @@ export const TicketGrid = ({ searchName }) => {
 
     return (
         <>
-            <h3>{ searchName }</h3>
             {
                 isLoading && ( <h2>Cargando...</h2> )
             }
             
 
-            <div className="card-grid">
+            <div className="ticket-grid">
                 {
                     tickets.map( ( ticket ) => (
                         <TicketItem 
