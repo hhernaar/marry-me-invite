@@ -45,12 +45,12 @@ export const TicketItem = (ticket) => {
                         </div>
                     </div>
 
-                    <div className="row mt-4">
+                    <div className="row">
                         {
                             ticket.status == guestsStatusEnum.PENDING ?
                                 <>
-                                    <hr className="ticket-pending-div" />
-                                    <div className="demo pt-2">
+                                    <hr className="ticket-pending-div mt-4" />
+                                    <div className="d-flex justify-content-evenly pt-2">
                                         <div className="form-check">
                                             <input className='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault1' defaultChecked />
                                             <label className='form-check-label' htmlFor='flexRadioDefault1'>

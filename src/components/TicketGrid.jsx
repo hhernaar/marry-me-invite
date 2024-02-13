@@ -1,5 +1,5 @@
-import { useFetchTickets } from "../hooks/useFetchTickets"
-import { TicketItem } from "./TicketItem";
+import { useFetchTickets } from '../hooks/useFetchTickets';
+import { TicketItem } from './TicketItem';
 
 export const TicketGrid = ({ searchName }) => {
 
@@ -12,7 +12,7 @@ export const TicketGrid = ({ searchName }) => {
             }
             
 
-            <div className="ticket-grid">
+            <div className='ticket-grid'>
                 {
                     tickets.map( ( ticket ) => (
                         <TicketItem 
@@ -20,8 +20,7 @@ export const TicketGrid = ({ searchName }) => {
                             { ...ticket }
                         />
                     ))
-                }
-                
+                }            
             </div>
 
         </>

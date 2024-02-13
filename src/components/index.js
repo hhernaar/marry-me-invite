@@ -6,3 +6,4 @@ export * from './TicketsForm';
 export * from './TicketItem';
 export * from './TicketGrid';
 export * from './Agenda';
+export * from './AgendaItem';

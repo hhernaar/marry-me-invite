@@ -54,7 +54,6 @@
 .date-time {
     padding-top: 0.5rem;
     font-size: 1.2rem;
-    font-family: 'Courgette-Regular';
 }
 
 #location-section div h1 {
@@ -130,7 +129,7 @@
     background-color: var(--color-white);
 
     background-origin: border-box;
-    mask: 
+    mask:
         radial-gradient(circle 15px at right, #0000 95%, #000) right,
         radial-gradient(circle 15px at left, #0000 95%, #000) left;
     mask-size: 50% 100%;
@@ -151,7 +150,62 @@
     text-align: justify;
 }
 
-.demo {
-    display: flex;
-    justify-content: space-evenly;
+#agenda-section {
+    background-color: var(--color-white);
 }
+
+.agenda-item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.agenda-hour {
+    font-size: 0.9rem
+}
+
+.agenda-description {
+    max-width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 90px;
+    height: 3px;
+    background-color: black;
+    position: relative;
+    padding: 0%;
+    margin: 0%;
+}
+
+.circle {
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 11px;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: calc(50% - 5px);
+}
+
+.blue {
+    margin-top: 15px;
+    background: var(--color-dark-blue);
+}
+
+.blue .circle {
+    background: var(--color-dark-blue);
+    border-color: var(--color-dark-blue);
+}
+
+input::placeholder {
+    opacity: 0.3 !important;
+  }

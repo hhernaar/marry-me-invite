@@ -8,11 +8,15 @@ export const TicketsForm = () => {
     const { inputNameValue, onInputChange, onResetForm } = useForm({ inputNameValue: '' });
     const [ searchName, setSearchName ] = useState('');
 
-    const onSearchSubmit = (event) =>{
+    const onSearchSubmit = (event) => {
         event.preventDefault();
         onResetForm();
         setSearchName(inputNameValue);
-      }
+    };
+
+    const onConfirmSubmit = (event) => {
+
+    };
 
     return (
         <section id='tickets-section' className='pt-3 pb-3'>
@@ -29,8 +33,8 @@ export const TicketsForm = () => {
                     <form onSubmit={ onSearchSubmit }>
                         <div className='row mb-0'>
                             <div className='col-1' />
-                            <div className='col-8 d-flex justify-content-start'>
-                                <label htmlFor='name' className='form-label'>Nombre completo:</label>
+                            <div className='col-9 d-flex justify-content-start'>
+                                <label htmlFor='name' className='form-label'>Ingresa tu nombre completo:</label>
                             </div>
                         </div>
 
@@ -38,6 +42,7 @@ export const TicketsForm = () => {
                             <div className='col-1' />
                             <div className='col-8 pe-0'>
                                 <input id='inputName' name='inputNameValue' autoComplete='off' type='text' className='form-control'
+                                    placeholder='Roberto Aaron Hernandez Hernandez'
                                     value={ inputNameValue } onChange={ onInputChange }
                                 />
                             </div>
@@ -49,7 +54,9 @@ export const TicketsForm = () => {
                 }
                 {
                     searchName != '' &&
-                    <TicketGrid key={searchName} searchName = {searchName} />
+                    <form submit={ onConfirmSubmit() }>
+                        <TicketGrid key={searchName} searchName = {searchName} />
+                    </form>
                 }
             </div>
         </section>
