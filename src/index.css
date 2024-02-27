@@ -2,9 +2,10 @@
   --color-white: #FFFFFF;
   --color-black: #000000;
   --color-cream: #ffeedb;
-  --color-blue: hsl(197, 90%, 90%);
-  --color-brown: hsl(32, 39%, 56%);
+  --color-blue: #cfeffc;
+  --color-brown: hsl(354, 83%, 65%);  /*#C25450;*/ /*hsl(32, 39%, 56%);*/
   --color-dark-blue: #4D98B8;
+  --color-blue-80: #ffeedb;
 }
 
 * {

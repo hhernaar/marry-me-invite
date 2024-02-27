@@ -1,5 +1,5 @@
-import tickIcon from '../assets/icons/tick-icon.png';
-import crossIcon from '../assets/icons/cross-icon.png';
+import tickIcon from '../assets/icons/ticket/tick-icon.png';
+import crossIcon from '../assets/icons/ticket/cross-icon.png';
 import { guestsStatusEnum } from '../util/guestsStatusEnum';
 import { genderEnum } from '../util/genderEnum';
 

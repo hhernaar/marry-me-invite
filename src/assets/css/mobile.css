@@ -87,6 +87,18 @@
     max-width: 2.5rem;
 }
 
+.icon-md>img {
+    max-width: 4.5rem;
+}
+
+.icon-lg>img {
+    max-width: 8rem;
+}
+
+.icon-xl>img {
+    max-width: 9.5rem;
+}
+
 #tickets-section {
     width: 100%;
     min-height: 21vh;
@@ -162,21 +174,21 @@
 }
 
 .agenda-hour {
-    font-size: 0.9rem
+    font-size: 0.9rem;
 }
 
 .agenda-description {
     max-width: 100px;
-    height: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 1.6rem;
+    /*font-size: 1.1rem;*/
+    line-height: normal
 }
 
-.container {
+.agenda-circle-container {
     width: 90px;
-    height: 3px;
+    height: 1px;
     background-color: black;
     position: relative;
     padding: 0%;
@@ -208,4 +220,70 @@
 
 input::placeholder {
     opacity: 0.3 !important;
-  }
+}
+
+#dresscode-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+}
+
+#dresscode-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#dresscode-info>.dresscode-header {
+    background-color: var(--color-white);
+}
+
+#dresscode-info>.dresscode-body {
+    background-color: var(--color-cream);
+    width:130px;
+    /*height: calc(100% - 2rem);*/
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#wish-list-section {
+    display: block;
+    align-items: center;
+}
+
+.wish-list-item,
+.hotel-list-item {
+    width: 165px;
+    height: 140px;
+    /*padding: 2rem .5rem;*/
+    transition: box-shadow .3s ease, transform .2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wish-list-item:hover span{
+    box-shadow: 0 8px 50px #23232333;
+    opacity: 0.3;
+}
+
+.wish-list-item:hover>.wish-list-item-header,
+.wish-list-item:hover>.wish-list-item-desc {
+    transform: translateY(-5%);
+}
+
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 1rem;
+}
+

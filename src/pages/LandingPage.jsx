@@ -1,4 +1,4 @@
-import { Agenda, Location, SaveTheDate, TicketsForm, Welcome } from "../components"
+import { Agenda, DressCode, Hotels, Location, PhotoDump, SaveTheDate, TicketsForm, Welcome, WishList } from "../components"
 
 export const LandingPage = () => {
 
@@ -9,6 +9,10 @@ export const LandingPage = () => {
       < Location />
       < TicketsForm />
       < Agenda />
+      < DressCode />
+      < WishList />
+      < Hotels />
+      < PhotoDump />
     </>
   )
 }

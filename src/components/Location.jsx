@@ -1,4 +1,4 @@
-import churchIcon from '../assets/icons/church-icon-color.png';
+import churchIcon from '../assets/icons/church/church-icon-color.png';
 
 export const Location = () => {
     return (

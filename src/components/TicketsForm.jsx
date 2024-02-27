@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ticketIcon from '../assets/icons/ticket-icon.png';
+import ticketIcon from '../assets/icons/ticket/ticket-icon.png';
 import { useForm } from '../hooks/useForm';
 import { TicketGrid } from './TicketGrid';
 
@@ -42,7 +42,7 @@ export const TicketsForm = () => {
                             <div className='col-1' />
                             <div className='col-8 pe-0'>
                                 <input id='inputName' name='inputNameValue' autoComplete='off' type='text' className='form-control'
-                                    placeholder='Roberto Aaron Hernandez Hernandez'
+                                    placeholder='John Doe'
                                     value={ inputNameValue } onChange={ onInputChange }
                                 />
                             </div>

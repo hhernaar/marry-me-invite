@@ -7,3 +7,7 @@ export * from './TicketItem';
 export * from './TicketGrid';
 export * from './Agenda';
 export * from './AgendaItem';
+export * from './DressCode';
+export * from './WishList';
+export * from './Hotels';
+export * from './PhotoDump';
