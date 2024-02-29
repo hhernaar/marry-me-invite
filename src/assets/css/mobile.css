@@ -15,7 +15,7 @@
 #save-the-date-section {
     width: 100%;
     min-height: 21vh;
-    background: var(--color-cream);
+    background: var(--color-blue);
 }
 
 #save-the-date-section h1 {
@@ -28,7 +28,7 @@
 
 .countdown-circle {
     border-radius: 50%;
-    background-color: var(--color-brown);
+    background-color: var(--color-dark-blue);
     color: white;
 }
 
@@ -222,7 +222,8 @@ input::placeholder {
     opacity: 0.3 !important;
 }
 
-#dresscode-section {
+#dresscode-section,
+#photo-dump-section {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -234,19 +235,21 @@ input::placeholder {
     text-align: center;
 }
 
-#dresscode-info {
+#dresscode-info,
+#photo-dump-info {
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
 
-#dresscode-info>.dresscode-header {
+#dresscode-info>.dresscode-header,
+#photo-dump-info>.photo-dump-header {
     background-color: var(--color-white);
 }
 
 #dresscode-info>.dresscode-body {
-    background-color: var(--color-cream);
-    width:130px;
+    background-color: var(--color-blue);
+    width: 130px;
     /*height: calc(100% - 2rem);*/
     height: 80px;
     display: flex;
@@ -260,24 +263,27 @@ input::placeholder {
     align-items: center;
 }
 
-.wish-list-item,
-.hotel-list-item {
+.card-list-item-header {
+    display: flex;
+    justify-content: center;
+}
+
+.card-list-item {
     width: 165px;
-    height: 140px;
-    /*padding: 2rem .5rem;*/
+    height: 100px;
     transition: box-shadow .3s ease, transform .2s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.wish-list-item:hover span{
+.card-list-item:hover span {
     box-shadow: 0 8px 50px #23232333;
     opacity: 0.3;
 }
 
-.wish-list-item:hover>.wish-list-item-header,
-.wish-list-item:hover>.wish-list-item-desc {
+.card-list-item:hover>.card-list-item-header,
+.card-list-item:hover>.card-list-item-desc {
     transform: translateY(-5%);
 }
 
@@ -287,3 +293,35 @@ input::placeholder {
     margin: 1rem;
 }
 
+#photo-dump-info>.photo-dump-body {
+    background-color: var(--color-blue);
+    width: auto;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pulseBtn {
+    border-radius: 50%;
+    font-size: 1rem;
+    box-shadow: 0 0 0 0 rgba(69, 198, 85, 0.4);
+    -moz-animation: pulse 2s infinite;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(69, 198, 85, 1);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(69, 198, 85, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 50px rgba(69, 198, 85, 0);
+    }
+}

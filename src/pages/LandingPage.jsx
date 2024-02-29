@@ -11,8 +11,8 @@ export const LandingPage = () => {
       < Agenda />
       < DressCode />
       < WishList />
-      < Hotels />
       < PhotoDump />
+      < Hotels />
     </>
   )
 }

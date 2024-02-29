@@ -29,8 +29,8 @@ export const WishList = () => {
 
         {
           getWishList.map((item) => (
-            <div key={item.id} className="wish-list-item" onClick={handleClick(item.link)}>
-              <div className="wish-list-item-header pb-3">
+            <div key={item.id} className="card-list-item" onClick={handleClick(item.link)}>
+              <div className="card-list-item-header pb-3">
                 <span className={item.iconClass}>
                   <img src={getIcon(item.icon)} />
                 </span>
@@ -41,7 +41,7 @@ export const WishList = () => {
 
       </div>
 
-      <div className='row text-center mb-3'>
+      <div className='row text-center mb-3 mt-2'>
         <span className='icon-md'>
           <img src={envelopIcon} />
         </span>
