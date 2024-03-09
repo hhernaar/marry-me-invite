@@ -115,7 +115,7 @@
 
 .ticket-row {
     width: auto;
-    min-width: 270px;
+    min-width: 360px;
     max-width: 400px;
     margin-bottom: 10px;
 }
@@ -182,7 +182,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    /*font-size: 1.1rem;*/
     line-height: normal
 }
 
@@ -250,7 +249,6 @@ input::placeholder {
 #dresscode-info>.dresscode-body {
     background-color: var(--color-blue);
     width: 130px;
-    /*height: calc(100% - 2rem);*/
     height: 80px;
     display: flex;
     flex-direction: column;
@@ -275,9 +273,10 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 3px 3px 3px #DFE0DF;
 }
 
-.card-list-item:hover span {
+.card-list-item:hover {
     box-shadow: 0 8px 50px #23232333;
     opacity: 0.3;
 }
@@ -321,6 +320,10 @@ input::placeholder {
     padding-right: 1rem;
 }
 
+.alert {
+    margin-left: 0.8rem;
+}
+
 @keyframes pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(69, 198, 85, 1);
@@ -332,5 +335,11 @@ input::placeholder {
 
     100% {
         box-shadow: 0 0 0 50px rgba(69, 198, 85, 0);
+    }
+}
+
+@media(max-width:370){
+    .ticket-row {
+        min-width: 270px;
     }
 }

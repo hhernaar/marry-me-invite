@@ -33,7 +33,7 @@ export const Hotels = () => {
 
         {
           getHotelsList.map((item) => (
-            <div key={item.id} className="card-list-item" onClick={handleClick(item.link)}>
+            <div key={item.id} className="card-list-item mb-2" onClick={handleClick(item.link)}>
               <div className="card-list-item-header pb-1">
                 <span className={item.iconClass}>
                   <img src={getIcon(item.icon)} />

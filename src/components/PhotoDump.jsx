@@ -20,7 +20,7 @@ export const PhotoDump = () => {
           <div className='dresscode-body-icons pulseBtn'>
 
 
-            <a className='' href='https://wa.me/525530229210?text=¡Hola! Aquí están mis fotos:'>
+            <a className='' href='https://wa.me/525525253792?text=¡Hola! Éstas son las fotos que tome durante la fiesta:'>
               <span className='icon-sm'>
                 <img src={whatsAppIcon} />
               </span>

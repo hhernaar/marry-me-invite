@@ -24,7 +24,6 @@ export const TicketGrid = ({ searchName, onCancelSubmit }) => {
     }
 
     const onConfirmSubmit = (event) => {
-        event.preventDefault();
         const responses = [];
         document.querySelectorAll('input[type="radio"]:checked')
             .forEach((radio) => {
@@ -45,7 +44,10 @@ export const TicketGrid = ({ searchName, onCancelSubmit }) => {
             {
                 !isLoading && tickets.length == 0 &&
                 <>
-                    <h2>Lo sentimos, no encontramos boletos para: {searchName}</h2>
+                    <div className="alert alert-danger" role="alert">
+                        <p>Lo sentimos, no encontramos boletos para <b>{searchName}</b>.
+                        Ingresa tu nombre correctamente</p>                   
+                    </div>
                     <a href={'#location-section'} className='btn btn-primary' onClick={(e) => onCancelSubmit(e)}>Cancelar</a>
                 </>
             }
@@ -67,14 +69,14 @@ export const TicketGrid = ({ searchName, onCancelSubmit }) => {
                     <div className='d-flex justify-content-evenly'>
                         <div className=''>
                             <a href={'#tickets-section'} className='btn btn-primary' onClick={onCancelSubmit}>Cancelar</a>
-                            {/*<Link to='#location-section' className='btn btn-primary' onClick={onCancelSubmit} >Cancelar</Link>*/}
                         </div>
                         {
 
                             tickets.filter(ticket => (ticket.status == guestsStatusEnum.PENDING)).length > 0
                             &&
                             <div className=''>
-                                <button className='btn btn-primary' type='submit' onClick={(e) => onConfirmSubmit(e)}>Enviar</button>
+                                {/*<button className='btn btn-primary' type='submit' onClick={(e) => (e)}></button>*/}
+                                <a href={'#tickets-section'} className='btn btn-primary' onClick={onConfirmSubmit}>Enviar</a>
                             </div>
                         }
                     </div>
