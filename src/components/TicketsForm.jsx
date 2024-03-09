@@ -23,7 +23,7 @@ export const TicketsForm = () => {
     return (
         <section id='tickets-section' className='pt-3 pb-3'>
             <div className='row text-center mb-3'>
-                <h3 className='font-el-messiri mb-0'>Consulta tus boletos.</h3>
+                <h3 className='font-el-messiri mb-0'>Confirma tu asistencia</h3>
                 <span className='icon-sm'>
                     <img src={ticketIcon} />
                 </span>
