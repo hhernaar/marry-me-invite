@@ -17,7 +17,7 @@ export const Hotels = () => {
   //const airbnbLink = 'https://www.airbnb.mx/';
 
   return (
-    <section id='location-section' className='pt-3 pb-3'>
+    <section id='hotels-section' className='pt-3 pb-3'>
       <div className="row text-center mb-0">
         <h1 className='font-el-messiri mb-0'>Hospedaje</h1>
         <span className='icon-sm'>

@@ -1,6 +1,7 @@
 import { BASE_API_PATH } from '../util/marryMeAPIUtils';
+import { getTicketsAPI } from './getTicketsAPI';
 
-export const postTicketsAPI = async (bodyRequest) => {
+export const postTicketsAPI = async (bodyRequest, name) => {
 
 
     const url = `${BASE_API_PATH}/guest`;
@@ -13,13 +14,7 @@ export const postTicketsAPI = async (bodyRequest) => {
     const data = await response.json();
 
     if (response.status == 201) {
-        const tickets = data.map(ticket => ({
-            id: ticket.id,
-            gender: ticket.gender,
-            fullName: ticket.full_name,
-            status: ticket.status
-        }));
-        return tickets;
+        return getTicketsAPI(name);
     } else {
         return [];
     }

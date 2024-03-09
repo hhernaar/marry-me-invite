@@ -312,8 +312,13 @@ input::placeholder {
     animation: pulse 2s infinite;
 }
 
-.capitalize-name {
+.guest-name {
     text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 @keyframes pulse {

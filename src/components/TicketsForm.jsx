@@ -15,7 +15,7 @@ export const TicketsForm = () => {
     };
 
     const onCancelSubmit = (event) => {
-        event.preventDefault();
+        console.log('canceling')
         onResetForm();
         setSearchName('');
     }

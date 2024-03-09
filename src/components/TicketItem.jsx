@@ -35,7 +35,7 @@ export const TicketItem = ({ ticket }) => {
                             </div>
                         }
                         <div className='col-12 pt-2'>
-                            <span className='capitalize-name'>
+                            <span className='guest-name'>
                                 {ticket.gender == 'M' ?
                                     <b>Invitado:</b>
                                     : <b>Invitada:</b>

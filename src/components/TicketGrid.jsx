@@ -3,6 +3,7 @@ import { TicketItem } from './TicketItem';
 import { guestsStatusEnum } from '../util/guestsStatusEnum';
 import { useEffect, useState } from 'react';
 import { postTicketsAPI } from '../helpers/postTicketsAPI';
+import { Link } from 'react-router-dom';
 
 export const TicketGrid = ({ searchName, onCancelSubmit }) => {
 
@@ -17,7 +18,7 @@ export const TicketGrid = ({ searchName, onCancelSubmit }) => {
     
     const postTickets = async() => {
         setIsLoading(true);
-        const tickets = await postTicketsAPI(requestBody);
+        const tickets = await postTicketsAPI(requestBody, searchName);
         setTickets(tickets);
         setIsLoading(false);
     }
@@ -44,7 +45,7 @@ export const TicketGrid = ({ searchName, onCancelSubmit }) => {
             {
                 !isLoading && tickets.length == 0 &&
                 <>
-                    <h1>No encontramos tu nombre :</h1>
+                    <h2>Lo sentimos, no encontramos boletos para: {searchName}</h2>
                     <a href={'#location-section'} className='btn btn-primary' onClick={(e) => onCancelSubmit(e)}>Cancelar</a>
                 </>
             }
@@ -65,8 +66,8 @@ export const TicketGrid = ({ searchName, onCancelSubmit }) => {
                     </div>
                     <div className='d-flex justify-content-evenly'>
                         <div className=''>
-                            <a href={'#location-section'} className='btn btn-primary' onClick={(e) => onCancelSubmit(e)}>Cancelar</a>
-                            {/*<Link to='#location-section' className='btn btn-primary' onClick={ (e) => onCancelSubmit(e)} >Cancelar</Link>*/}
+                            <a href={'#tickets-section'} className='btn btn-primary' onClick={onCancelSubmit}>Cancelar</a>
+                            {/*<Link to='#location-section' className='btn btn-primary' onClick={onCancelSubmit} >Cancelar</Link>*/}
                         </div>
                         {
 
