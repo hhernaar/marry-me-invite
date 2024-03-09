@@ -8,7 +8,7 @@ export const AppRouter = () => {
       <section id='main-container'>
         <Routes>
           {/*<Route path='/marry-me-invite/:uuid' element={ <LandingPage /> } />*/}
-          <Route path='/marry-me-invite' element={ <LandingPage /> } />
+          <Route path='/' element={ <LandingPage /> } />
           <Route path='/*' element={ <Navigate to='/' /> } />
         </Routes>
       </section>
