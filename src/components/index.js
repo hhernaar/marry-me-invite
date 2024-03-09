@@ -4,6 +4,7 @@ export * from './Attendance';
 export * from './Location';
 export * from './TicketsForm';
 export * from './TicketItem';
+export * from './TicketItemPending';
 export * from './TicketGrid';
 export * from './Agenda';
 export * from './AgendaItem';

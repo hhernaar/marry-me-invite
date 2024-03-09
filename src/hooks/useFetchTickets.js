@@ -18,6 +18,8 @@ export const useFetchTickets = ( name ) => {
 
     return {
         tickets,
-        isLoading
+        isLoading,
+        setTickets,
+        setIsLoading
     };
 }

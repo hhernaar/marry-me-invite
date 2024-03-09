@@ -1,5 +1,5 @@
 export const guestsStatusEnum = {
     PENDING: 'PENDING',
-    ACCEPTED: 'ACCEPTED',
+    ACCEPTED: 'CONFIRMED',
     REJECTED: 'REJECTED'
 };

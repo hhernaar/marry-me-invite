@@ -11,9 +11,15 @@ import './assets/css/desktop.css';
 import './assets/css/wave.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+    <BrowserRouter>
+      <InviteApp />
+    </BrowserRouter>,
+)
+
+/**
+ * <React.StrictMode>
     <BrowserRouter>
       <InviteApp />
     </BrowserRouter>
   </React.StrictMode>,
-)
+ */

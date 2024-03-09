@@ -312,6 +312,10 @@ input::placeholder {
     animation: pulse 2s infinite;
 }
 
+.capitalize-name {
+    text-transform: capitalize;
+}
+
 @keyframes pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(69, 198, 85, 1);

@@ -2,8 +2,10 @@ import tickIcon from '../assets/icons/ticket/tick-icon.png';
 import crossIcon from '../assets/icons/ticket/cross-icon.png';
 import { guestsStatusEnum } from '../util/guestsStatusEnum';
 import { genderEnum } from '../util/genderEnum';
+import { TicketItemPending } from './TicketItemPending';
 
-export const TicketItem = (ticket) => {
+
+export const TicketItem = ({ ticket }) => {
 
     const getIcon = (gender) => {
         const imageName = (gender == genderEnum.MALE ? 'boy-' : 'girl-') + Math.floor(Math.random() * 5 + 1);
@@ -33,38 +35,21 @@ export const TicketItem = (ticket) => {
                             </div>
                         }
                         <div className='col-12 pt-2'>
-                            <span>
+                            <span className='capitalize-name'>
                                 {ticket.gender == 'M' ?
                                     <b>Invitado:</b>
                                     : <b>Invitada:</b>
-                                } &nbsp;{ticket.firstName}
+                                } &nbsp;{ticket.fullName}
                             </span>
-                        </div>
-                        <div className='col-12 mb-2'>
-                            <span>{ticket.lastName}</span>
                         </div>
                     </div>
 
                     <div className="row">
                         {
                             ticket.status == guestsStatusEnum.PENDING ?
-                                <>
-                                    <hr className="ticket-pending-div mt-4" />
-                                    <div className="d-flex justify-content-evenly pt-2">
-                                        <div className="form-check">
-                                            <input className='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault1' defaultChecked />
-                                            <label className='form-check-label' htmlFor='flexRadioDefault1'>
-                                                Asistiré
-                                            </label>
-                                        </div>
-                                        <div className="form-check">
-                                            <input className='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault2' />
-                                            <label className='form-check-label' htmlFor='flexRadioDefault2'>
-                                                No asistiré
-                                            </label>
-                                        </div>
-                                    </div>
-                                </>
+                                <TicketItemPending  
+                                    ticket={ticket}
+                                />
                                 :
                                 <>
                                     <div className='icon-sm'>

@@ -1,0 +1,1 @@
+export const BASE_API_PATH = 'https://4bn2ihlskl.execute-api.us-east-2.amazonaws.com/marry-me-invite-api';
