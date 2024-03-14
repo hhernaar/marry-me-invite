@@ -1,5 +1,10 @@
 @media (min-width: 720px) {
-    #welcome-section > div {
-        height: 75vh;
+    #dresscode-section,
+    #photo-dump-section>div {
+        height: 70vh;
+    }
+
+    .text-justify {
+        text-align: center;
     }
 }

@@ -115,7 +115,7 @@
 
 .ticket-row {
     width: auto;
-    min-width: 360px;
+    min-width: 400px;
     max-width: 400px;
     margin-bottom: 10px;
 }
@@ -152,6 +152,8 @@
         radial-gradient(circle 15px at left, #0000 95%, #000) left;
     -webkit-mask-size: 50% 100%;
     -webkit-mask-repeat: no-repeat;
+
+    min-height: 160px;
 }
 
 .ticket-pending-div {
@@ -222,7 +224,7 @@ input::placeholder {
 }
 
 #dresscode-section,
-#photo-dump-section {
+#photo-dump-section>div {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;

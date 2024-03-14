@@ -1,6 +1,26 @@
-/*@media (min-width: 992px) {
-    #welcome-section > div{
-        height: 50vh;
-    }    
-}*/
+@media (min-width: 1024px) {
 
+    #photo-dump-section>div {
+        height: 80vh;
+        background-position-y: 30%;
+    }
+
+    #dresscode-info>.dresscode-body {
+        width: 250px;
+        height: 200px;
+    }
+
+    .dresscode-body-icons .icon-sm>img {
+        max-width: 4.5rem;
+    }
+
+    .photo-dump-header {
+        width: 250px;
+        height: 50px;
+    }
+
+    .photo-dump-body {
+        width: 250px !important ;
+        height: 150px !important;
+    }
+}
