@@ -18,7 +18,7 @@ export const Location = () => {
                     <span className='font-el-messiri location-time mb-0'>14:30 hrs.</span>
                 </div>                
                 <div className='col-12'>
-                    <span className='mb-0'>Calle Cuahutémoc No. 625. El Empleado. C.P. 62250. Cuernavaca. Morelos.</span>
+                    <span className='mb-0'>Calle Cuahtémoc No. 625. El Empleado. C.P. 62250. Cuernavaca. Morelos.</span>
                 </div>
                 <div className="col-1"></div>
                 <div className='col-10' id='location-map'>
